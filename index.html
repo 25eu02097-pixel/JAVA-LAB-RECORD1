@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Java Lab Record | Siddhartha Academy of Higher Education</title>
+<meta name="description" content="Java Lab Record, Weeks 1 to 12, royal vintage edition.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="frame">
+
+  <!-- ===================== PAGE 1: HOME ===================== -->
+  <section id="page-home" class="page active">
+    <div class="crest-row seq" style="--i:0">
+      <!-- LOGO: replace assets/logo.png with your own if needed -->
+      <img class="logo" src="assets/logo.png" alt="Siddhartha Academy of Higher Education logo" width="92" height="118">
+      <p class="institution">Siddhartha Academy of Higher Education</p>
+    </div>
+
+    <h1 class="title seq" style="--i:1">JAVA LAB RECORD</h1>
+
+    <div class="scroll seq" style="--i:2">
+      <p><span>Name :-</span> Marakani Trinadh Kumar</p>
+      <p><span>Roll no :-</span> 25EU02097</p>
+      <p><span>Java Instructor :-</span> Ramesh Sir</p>
+      <p><span>Course Code :-</span> 24CS281</p>
+    </div>
+
+    <div class="seal-wrap seq" style="--i:3">
+      <p class="seal-hint">Press and hold the royal seal to open the record</p>
+      <button id="seal" class="seal" aria-label="Hold to break the seal and continue" type="button">
+        <svg class="seal-ring" viewBox="0 0 120 120" aria-hidden="true">
+          <circle cx="60" cy="60" r="54" class="seal-ring-bg"/>
+          <circle cx="60" cy="60" r="54" class="seal-ring-fill" id="sealProgress"/>
+        </svg>
+        <span class="seal-face">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M32 6c3 6 9 9 16 9-1 9-6 15-16 21-10-6-15-12-16-21 7 0 13-3 16-9Z"/>
+            <path d="M32 24a6 6 0 1 1 0 12 6 6 0 0 1 0-12Z"/>
+          </svg>
+        </span>
+        <i class="shard s1"></i><i class="shard s2"></i><i class="shard s3"></i>
+        <i class="shard s4"></i><i class="shard s5"></i><i class="shard s6"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===================== PAGE 2: WEEKS ===================== -->
+  <section id="page-weeks" class="page">
+    <h2 class="page-title">Choose a Week</h2>
+    <div id="weekGrid" class="week-grid"></div>
+  </section>
+
+  <!-- ===================== PAGE 3: DETAIL ===================== -->
+  <section id="page-detail" class="page">
+    <button class="back" id="backBtn" type="button">&larr; All Weeks</button>
+    <article class="detail-card">
+      <h2 id="detailTitle">Week</h2>
+      <h4>Aim</h4>
+      <p id="detailAim"></p>
+      <h4>Tasks Performed</h4>
+      <ul id="detailTasks"></ul>
+      <div class="detail-actions">
+        <a id="viewBtn" class="btn btn--primary" target="_blank" rel="noopener">View Document</a>
+        <a id="downloadBtn" class="btn btn--ghost">Download Document</a>
+        <button id="shareBtn" class="btn btn--ghost" type="button">Share Document</button>
+      </div>
+    </article>
+  </section>
+
+</div>
+
+<!-- Curtain transition overlay -->
+<div class="curtain" id="curtain" aria-hidden="true">
+  <div class="panel left"></div>
+  <div class="panel right"></div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
